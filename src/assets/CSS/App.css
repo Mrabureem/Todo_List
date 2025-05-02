@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Alexandria;
+  src: url("../../../public/fonts/Alexandria-VariableFont_wght.ttf");
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Alexandria, Arial;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #181a1c;
+  user-select: none;
+}
+.delet[aria-label="delete"]:hover {
+  background-color: red;
+  color: white;
+}
+.edit[aria-label="edit"]:hover {
+  background-color: black;
+  color: white;
+}
+.check[aria-label="check"][data-check="false"]:hover {
+  background-color: white;
+  color: green;
+}
+.check[aria-label="check"][data-check="true"]:hover {
+  background-color: green;
+  color: white;
+}
