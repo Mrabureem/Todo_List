@@ -33,8 +33,7 @@ export default function todoReducer(todos, action) {
       return updated;
     }
     case "first-load": {
-      return JSON.parse(localStorage.getItem("todos"));
-
+      return JSON.parse(localStorage.getItem("todos")) ?? [];
     }
     default: {
       console.log("no-action");
